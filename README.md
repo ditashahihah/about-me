@@ -1,11 +1,19 @@
 <h1 align="center">Hai, saya Dita 👋</h1>
 
 <p align="center">
-  <b>Data Scientist</b> — membangun agent berbasis LLM, dashboard analitik, dan model prediktif.
+  <b>Data Scientist</b>
 </p>
 
 <p align="center">
-  Di bawah ini beberapa project pilihan. <b>Demo bisa langsung dicoba</b> lewat tautan;
+  Data Scientist dengan 3+ tahun pengalaman membangun <b>aplikasi berbasis AI</b>, solusi
+  <b>analitik data</b>, dan <b>dashboard interaktif</b> untuk klien segmen politik, korporat,
+  dan pemerintahan. Berpengalaman dalam AI-assisted development dengan Python & LLM untuk
+  mengotomasi alur riset dan analitik, serta predictive modeling, sentiment analysis, dan
+  ETL pipeline engineering.
+</p>
+
+<p align="center">
+  Beberapa project pilihan di bawah ini — <b>demo bisa langsung dicoba</b> lewat tautan;
   kode sumber bersifat privat dan tersedia atas permintaan.
 </p>
 
@@ -14,30 +22,37 @@
 ## 🚀 Project Pilihan
 
 ### 1. 📊 Media Intelligence Dashboard
-Dashboard interaktif untuk memantau dan menganalisis percakapan media sosial —
-tren topik, sentimen, dan aktivitas akun dalam satu tampilan.
+Platform dashboard interaktif yang dapat dikonfigurasi untuk klien **politik, korporat, dan
+pemerintahan** dari satu basis kode. Menyajikan metrik media & analitik secara real-time di
+atas **Elasticsearch**, dengan komponen visualisasi **custom HTML/CSS/SQL** yang disesuaikan
+per segmen klien, dan terintegrasi otomatis dengan **ETL pipeline**.
 
-- **Tech**: Dashboard analitik · Visualisasi data · Web app
+- **Tech**: HTML/CSS · SQL · Elasticsearch · Data Visualization · Web App
 - **🔗 Demo langsung**: <https://mediaintelligence.netlify.app/>
 
-> **Cara coba**: buka tautan, jelajahi filter & grafik untuk melihat ringkasan tren dan sentimen secara real-time.
+> **Cara coba**: buka tautan, jelajahi filter & grafik untuk melihat metrik media dan sentimen secara real-time.
 
 ---
 
-### 2. 📈 Inflation Prediction
-Aplikasi prediksi inflasi berbasis model machine learning, menampilkan proyeksi
-angka inflasi beserta visualisasinya agar mudah dipahami.
+### 2. 📈 Public Sentiment-Based Inflation Prediction
+Sistem prediktif **end-to-end** yang menggabungkan **sentimen media sosial real-time** dengan
+**indikator makroekonomi historis** untuk memproyeksikan pergerakan inflasi jangka pendek.
+Dibangun dengan **pipeline NLP** ekstraksi sentimen (mengubah teks tak terstruktur jadi sinyal
+sentimen harian) dan **model regresi**, divalidasi terhadap data inflasi historis, lalu
+ditampilkan lewat dashboard interaktif.
 
-- **Tech**: Machine Learning · Time-series forecasting · Web app
+- **Tech**: Machine Learning · NLP · Time-series Forecasting · Web App
 - **🔗 Demo langsung**: <https://prediction-inflation.netlify.app/>
 
-> **Cara coba**: buka tautan, masukkan parameter/periode untuk melihat proyeksi inflasi dan grafiknya.
+> **Cara coba**: buka tautan untuk melihat proyeksi inflasi beserta visualisasinya.
 
 ---
 
 ### 3. 🤖 Summary Agent (LLM API)
-REST API yang meringkas **data apa pun** (berbentuk JSON) menjadi ringkasan rapi
-menggunakan LLM. Bisa diarahkan fokus, format, dan bahasanya.
+**Analytics API** berbasis LLM yang meringkas **data apa pun** (berbentuk JSON) menjadi
+ringkasan rapi dan terstruktur. Fokus, format, dan bahasa keluaran dapat dikonfigurasi.
+Dibangun mengikuti pola integrasi LLM (prompt engineering, structured output) dan di-deploy
+sebagai REST API publik.
 
 - **Tech**: FastAPI · LangChain · LLM `gpt-oss-20b` via Groq · Docker · Hugging Face Spaces
 - **🔗 Demo langsung (Swagger UI)**: <https://ditash-summary-agent.hf.space/docs>
@@ -76,13 +91,19 @@ curl -X POST https://ditash-summary-agent.hf.space/api/v1/summarize \
 
 ## 🛠️ Tech Stack
 
-`Python` · `FastAPI` · `LangChain` · `LLM / Groq` · `Machine Learning` ·
-`Time-series Forecasting` · `Data Visualization` · `Docker` · `Hugging Face Spaces` · `Netlify`
+**Bahasa & Dev**: `Python` · `SQL` · `HTML/CSS` · `REST API`
+**AI & LLM**: `LLM Integration` · `Prompt Engineering` · `NLP` · `AI-Assisted Development`
+**Data & ML**: `Sentiment Analysis` · `Predictive Modeling` · `Time-series Forecasting` · `ETL Pipelines` · `Elasticsearch`
+**Visualisasi & Deploy**: `Pandas` · `Matplotlib` · `Custom Dashboards` · `Docker` · `Hugging Face Spaces` · `Netlify`
 
 ---
 
-## 📫 Kontak
+## 🎓 Pendidikan
+**S1 Informatika (S.Kom)** — Universitas Jember · IPK 3.56/4.00
 
+## 📫 Kontak
+- LinkedIn: [dita-shahihah](https://linkedin.com/in/dita-shahihah)
+- Email: ditashahihah@gmail.com
 - GitHub: [@ditashahihah](https://github.com/ditashahihah)
 
 <sub>Demo di atas gratis dihosting; API LLM bisa "tidur" saat idle dan butuh beberapa detik untuk bangun pada request pertama.</sub>
