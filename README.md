@@ -1,7 +1,7 @@
 <h1 align="center">Hai, saya Dita 👋</h1>
 
 <p align="center">
-  <b>Data & AI Engineer</b> — membangun agent berbasis LLM, dashboard analitik, dan model prediktif.
+  <b>Data Scientist</b> — membangun agent berbasis LLM, dashboard analitik, dan model prediktif.
 </p>
 
 <p align="center">
