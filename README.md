@@ -89,10 +89,35 @@ curl -X POST https://ditash-agent-summary.hf.space/api/v1/summarize \
 
 ---
 
+### 4. Data Scoring API (LLM)
+**REST API** untuk menilai kualitas metadata aset data pada dua aspek: **kredibilitas sumber**
+(4 dimensi: kredibilitas sumber, kesesuaian scope, frekuensi pembaruan, metodologi) dan
+**kelengkapan isi** (entitas, temporal, field). Mengeluarkan skor, bucket, *critical flags*,
+dan rekomendasi perbaikan. Termasuk *entity inference* otomatis.
+
+- **Tech**: FastAPI · LangChain · LLM `gpt-oss-120b` via Groq · Docker · Hugging Face Spaces
+- **Demo langsung (Swagger UI)**: <https://ditash-agent-score-data.hf.space/docs>
+
+> **Cara coba**: buka `/docs` → endpoint `/api/v1/score/credibility` atau `/api/v1/score/completeness` → **Try it out**.
+
+---
+
+### 5. Context Search Agent (LLM)
+**Agent pencari konteks dari web untuk topik apa saja.** Diberi sebuah pertanyaan/topik, agent
+mencari di **DuckDuckGo**, memeringkat hasil (sumber otoritatif diutamakan), lalu **mensintesis
+jawaban dengan sitasi sumber** menggunakan LLM — grounded ke hasil pencarian untuk menekan halusinasi.
+
+- **Tech**: FastAPI · LangChain · DuckDuckGo Search · LLM via Groq · Docker · Hugging Face Spaces
+- **Demo langsung (Swagger UI)**: <https://ditash-agent-context-ddg.hf.space/docs>
+
+> **Cara coba**: buka `/docs` → endpoint `/api/v1/context` → **Try it out** → isi `query` dengan pertanyaan apa pun.
+
+---
+
 ## Tech Stack
 
 **Bahasa &amp; Dev**: `Python` · `SQL` · `HTML/CSS` · `REST API`
-**AI &amp; LLM**: `LLM Integration` · `Prompt Engineering` · `NLP` · `AI-Assisted Development`
+**AI &amp; LLM**: `LLM Integration` · `Prompt Engineering` · `NLP` · `RAG / Web Search` · `AI-Assisted Development`
 **Data &amp; ML**: `Sentiment Analysis` · `Predictive Modeling` · `Time-series Forecasting` · `ETL Pipelines` · `Elasticsearch`
 **Visualisasi &amp; Deploy**: `Pandas` · `Matplotlib` · `Custom Dashboards` · `Docker` · `Hugging Face Spaces` · `Netlify`
 
