@@ -55,14 +55,14 @@ Dibangun mengikuti pola integrasi LLM (prompt engineering, structured output) da
 sebagai REST API publik.
 
 - **Tech**: FastAPI · LangChain · LLM `gpt-oss-20b` via Groq · Docker · Hugging Face Spaces
-- **Demo langsung (Swagger UI)**: <https://ditash-summary-agent.hf.space/docs>
+- **Demo langsung (Swagger UI)**: <https://ditash-agent-summary.hf.space/docs>
 
 <details>
 <summary><b>Contoh penggunaan (klik untuk buka)</b></summary>
 
 **Request:**
 ```bash
-curl -X POST https://ditash-summary-agent.hf.space/api/v1/summarize \
+curl -X POST https://ditash-agent-summary.hf.space/api/v1/summarize \
   -H "Content-Type: application/json" \
   -d '{
     "data": {
