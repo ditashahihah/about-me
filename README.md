@@ -55,14 +55,14 @@ Dibangun mengikuti pola integrasi LLM (prompt engineering, structured output) da
 sebagai REST API publik.
 
 - **Tech**: FastAPI · LangChain · LLM `gpt-oss-20b` via Groq · Docker · Hugging Face Spaces
-- **Demo langsung (Swagger UI)**: <https://ditash-agent-summary.hf.space/docs>
+- **Demo langsung (Swagger UI)**: <https://ditash-agent-hub.hf.space/docs>
 
 <details>
 <summary><b>Contoh penggunaan (klik untuk buka)</b></summary>
 
 **Request:**
 ```bash
-curl -X POST https://ditash-agent-summary.hf.space/api/v1/summarize \
+curl -X POST https://ditash-agent-hub.hf.space/api/v1/summarize \
   -H "Content-Type: application/json" \
   -d '{
     "data": {
@@ -96,7 +96,7 @@ curl -X POST https://ditash-agent-summary.hf.space/api/v1/summarize \
 dan rekomendasi perbaikan. Termasuk *entity inference* otomatis.
 
 - **Tech**: FastAPI · LangChain · LLM `gpt-oss-120b` via Groq · Docker · Hugging Face Spaces
-- **Demo langsung (Swagger UI)**: <https://ditash-agent-score-data.hf.space/docs>
+- **Demo langsung (Swagger UI)**: <https://ditash-agent-hub.hf.space/docs>
 
 > **Cara coba**: buka `/docs` → endpoint `/api/v1/score/credibility` atau `/api/v1/score/completeness` → **Try it out**.
 
@@ -108,7 +108,7 @@ mencari di **DuckDuckGo**, memeringkat hasil (sumber otoritatif diutamakan), lal
 jawaban dengan sitasi sumber** menggunakan LLM — grounded ke hasil pencarian untuk menekan halusinasi.
 
 - **Tech**: FastAPI · LangChain · DuckDuckGo Search · LLM via Groq · Docker · Hugging Face Spaces
-- **Demo langsung (Swagger UI)**: <https://ditash-agent-context-ddg.hf.space/docs>
+- **Demo langsung (Swagger UI)**: <https://ditash-agent-hub.hf.space/docs>
 
 > **Cara coba**: buka `/docs` → endpoint `/api/v1/context` → **Try it out** → isi `query` dengan pertanyaan apa pun.
 
