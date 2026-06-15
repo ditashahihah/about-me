@@ -127,6 +127,7 @@ jawaban dengan sitasi sumber** menggunakan LLM — grounded ke hasil pencarian u
 **S1 Informatika (S.Kom)** — Universitas Jember · IPK 3.56/4.00
 
 ## Kontak
+- 🌐 Portfolio: [ditashahihah.github.io/portfolio-web](https://ditashahihah.github.io/portfolio-web/)
 - LinkedIn: [dita-shahihah](https://linkedin.com/in/dita-shahihah)
 - Email: ditashahihah@gmail.com
 - GitHub: [@ditashahihah](https://github.com/ditashahihah)
